@@ -1,0 +1,47 @@
+root - INFO - IMPORT: Importing data from CSV at './data/bank_data.csv'
+root - INFO - IMPORT: Successfully imported dataframe
+root - INFO -    Unnamed: 0  CLIENTNUM  Customer_Age Gender  ...  Total_Trans_Ct Total_Ct_Chng_Q4_Q1 Avg_Utilization_Ratio Churn
+0           0  768805383            45      M  ...              42               1.625                 0.061     0
+1           1  818770008            49      F  ...              33               3.714                 0.105     0
+2           2  713982108            51      M  ...              20               2.333                 0.000     0
+3           3  769911858            40      F  ...              20               2.333                 0.760     0
+4           4  709106358            40      M  ...              28               2.500                 0.000     0
+
+[5 rows x 22 columns]
+root - INFO - EDA: Creating histograms for the Dataset's Churn and Customer Age
+root - INFO - Saving plot to './images/Churn_EDA.png'
+root - INFO - Saving plot to './images/Customer_Age_EDA.png'
+root - INFO - EDA: Creating a bar graph for the Marital Status
+root - INFO - Saving plot to './images/Marital_Status_EDA.png'
+root - INFO - EDA: Creating a histogram of the transaction counts to show distribution
+root - INFO - Saving plot to './images/Total_Trans_Ct_EDA.png'
+root - INFO - EDA: Creating a correlation heatmap
+root - INFO - Saving plot to './images/Correlation_EDA.png'
+root - INFO - FEATURE_ENG: Encoding and splitting dataset into training and test subsets...
+root - INFO - Performing One-Hot encoding...
+root - INFO - Successfully encoded Dataframe Columns as One-Hot Values
+root - INFO -    Unnamed: 0  CLIENTNUM  Customer_Age  ...  Card_Category_Gold  Card_Category_Platinum  Card_Category_Silver
+0           0  768805383            45  ...                 0.0                     0.0                   0.0
+1           1  818770008            49  ...                 0.0                     0.0                   0.0
+2           2  713982108            51  ...                 0.0                     0.0                   0.0
+3           3  769911858            40  ...                 0.0                     0.0                   0.0
+4           4  709106358            40  ...                 0.0                     0.0                   0.0
+
+[5 rows x 35 columns]
+root - INFO - TRAIN: Building the Random Forest and Logistic Regression models...
+root - INFO - TRAIN: Training the models...
+root - INFO - TRAIN: Saving the models to files...
+root - INFO - TRAIN: Creating predictions...
+root - INFO - Plotting feature importance for the model...
+root - INFO - Saving plot to './images/Feature_Importance_RFC.png'
+root - INFO - REPORT: Creating classification reports...
+root - INFO - REPORT: Creating report for Logistic Regression model
+root - INFO - Saving plot to './images/Logistic Regression_Model_Report.png'
+root - INFO - REPORT: Successfully created report for model results.
+root - INFO - REPORT: Creating report for Random Forest model
+root - INFO - Saving plot to './images/Random Forest_Model_Report.png'
+root - INFO - REPORT: Successfully created report for model results.
+root - INFO - TRAIN: Creating model Receiver Operating Characteristic curves...
+root - INFO - Saving plot to './images/ROC_Curves.png'
+root - INFO - TRAIN: Creating feature explainer plot...
+root - INFO - Saving plot to './images/Feature_Explainer_RFC.png'
