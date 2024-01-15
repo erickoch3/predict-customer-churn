@@ -7,6 +7,8 @@ import churn_library as cl
 
 class ChangeDir:
     """Class used as context for temporary change of local directory"""
+    # Reference:
+    # https://pythonadventures.wordpress.com/2013/12/15/chdir-a-context-manager-for-switching-working-directories/
 
     def __init__(self, new_path):
         """Initialize ChangeDir by storing the new path to which we change"""
