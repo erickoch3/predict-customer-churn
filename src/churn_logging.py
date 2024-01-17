@@ -1,4 +1,11 @@
-"""module to configure logging for the library"""
+"""
+Author: Eric Koch
+Date Created: 2023-12-27
+
+This module serves to initialize logging for the churn analysis library
+and its related tests.
+"""
+
 import logging
 import sys
 

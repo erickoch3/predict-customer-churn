@@ -1,4 +1,13 @@
-"""library to assist analysis of customer churn"""
+"""
+Author: Eric Koch
+Date Created: 2023-12-27
+
+This modules provides the core code to analyze a bank's credit card
+customer churn data. It performs exploratory data analysis (EDA),
+performs feature engineering, and trains and evaluates a logistic regression
+and a random forest model.
+"""
+
 
 import os
 import logging

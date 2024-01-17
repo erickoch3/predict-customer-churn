@@ -1,8 +1,17 @@
-"""test cases for the churn_library module"""
+"""
+Author: Eric Koch
+Date Created: 2023-12-27
+
+This modules tests different functions from churn_library module using
+the pytest package. It initialize logging with the setup_function and
+then runs each test function.
+"""
+
 import os
 import numpy as np
 import pandas as pd
 import churn_library as cl
+import churn_logging as clog
 
 
 class ChangeDir:
@@ -23,6 +32,11 @@ class ChangeDir:
     def __exit__(self, *args):
         """When exiting context, changedir back to the saved working directory"""
         os.chdir(self.saved_path)
+
+
+def setup_function():
+    '''Initial setup to run before every test'''
+    clog.logging_init()
 
 
 def test_import_data_file_exists():

@@ -22,11 +22,16 @@ To run, first set up your python venv environment through our Makefile with:
 Subsequently, run:
 `make venv`
 to enter that virtual environment.
-Once you are running inside a python venv, run:
+Next, run:
+`make install`
+to install necessary packages for the project.
+To lint and test the package, run:
+`make lint`
+and subsequently
+`make test`
+To run the core functionality of the churn library, run:
 `make run`
-to execute the library's main function.
 
-To run tests or lint, use `make test` or `make lint` respectively.
 
 
 
